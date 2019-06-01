@@ -1,2 +1,2 @@
 # ESE1005
-Course Work on C++
+Course Work on VHDL Projects using Quartus
