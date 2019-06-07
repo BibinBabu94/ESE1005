@@ -1,0 +1,9 @@
+lIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+entity mux_logic is
+port(S : in STD_LOGIC_Vector(2 downto 0); D: in STD_LOGIC_Vector(7 downto 0); Y : out STD_LOGIC );
+END ENTITY mux_logic;
+architecture logic of mux_logic is
+begin
+Y<= (D(0) AND (NOT S(2)) AND (NOT S(1)) AND (NOT S(0))) OR (D(1) AND (NOT S(2)) AND (NOT S(1)) AND (S(0)))OR (D(2) AND (NOT S(2)) AND (S(1)) and (not S(0))) OR (D(3) AND (NOT S(2)) AND (S(1)) and (S(0))) OR (D(4) AND (S(2)) AND (not S(1)) and (not S(0))) OR (D(5) AND (S(2)) AND (not S(1)) and (S(0))) OR (D(6) AND (S(2)) AND (S(1)) and (not S(0))) OR (D(7) AND (S(2)) AND (S(1)) and (S(0)));
+ end architecture logic;
