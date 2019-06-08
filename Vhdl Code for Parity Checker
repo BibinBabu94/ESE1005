@@ -1,0 +1,9 @@
+Library IEEE;
+USE ieee.std_logic_1164.all;
+entity parity_check IS
+port(A,B,C,D,E,F,G,I: in bit; X: out bit);
+end entity parity_check;
+architecture logic of parity_check is 
+begin
+X<=(A Xor B Xor C Xor D Xor E xor F xor G xor I);
+end architecture logic;
