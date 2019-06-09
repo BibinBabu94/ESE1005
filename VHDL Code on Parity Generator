@@ -1,0 +1,9 @@
+Library IEEE;
+USE ieee.std_logic_1164.all;
+entity parity_gen IS
+port(A,B,C,D,E,F,G : in bit; X: out bit);
+end entity parity_gen;
+architecture logic of parity_gen is 
+begin
+X<=(A Xor B Xor C Xor D Xor E xor F xor G);
+end architecture logic;
