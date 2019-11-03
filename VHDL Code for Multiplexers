@@ -1,5 +1,5 @@
 lIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_1164.ALL
 entity mux_logic is;
 port(S : in STD_LOGIC_Vector(2 downto 0); D: in STD_LOGIC_Vector(7 downto 0); Y : out STD_LOGIC );
 END ENTITY mux_logic;
