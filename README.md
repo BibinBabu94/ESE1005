@@ -1,2 +1,2 @@
-# ESE1005
+ESE1005
 Course Work on VHDL Projects using Quartus
