@@ -1,4 +1,5 @@
 Library IEEE;
+
 USE ieee.std_logic_1164.all;
 entity parity_gen IS
 port(A,B,C,D,E,F,G : in bit; X: out bit);
